@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 270px;
+  height: 440px;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #262426;
+  overflow: hidden;
+}
+
+.container img {
+  z-index: 1;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -35px;
+  width: 500px;
+  height: 500px;
+  background: url(../5422.jpg) center / cover;
+  opacity: 0.8;
+}
+
+.content-box {
+  position: absolute;
+  z-index: 1;
+  bottom: 7px;
+  width: 255px;
+  height: 230px;
+  color: #ffffff;
+  padding: 0 7px;
+  border-radius: 10px 10px 15px 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content-box p {
+  color: #a6a6a6;
+  font-size: 13px;
+}
+
+.btn {
+  width: 240px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn button {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #f7b22c;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
